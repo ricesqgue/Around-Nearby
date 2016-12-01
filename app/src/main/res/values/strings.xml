@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NearbyShop</string>
+    <string name="usuario">Usuario:</string>
+    <string name="password">Contraseña:</string>
+    <string name="btn_entrar">Entrar</string>
+    <string name="recordar">Recordar</string>
+    <string name="loginNoRegistrado">Usuario no registrado</string>
+</resources>

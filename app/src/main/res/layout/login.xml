@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/around"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUsuario"
+            android:text="@string/usuario"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUsuario"
+
+            android:textSize="20sp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:id="@+id/txtPassword"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:id="@+id/etPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recordar"
+            android:id="@+id/checkRecordar"
+            android:checked="false"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_entrar"
+            android:id="@+id/btnEntrar"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="#ffffff"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
