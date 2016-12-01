@@ -1,6 +1,7 @@
 package com.delincuencia.nearbyshop.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -98,12 +99,18 @@ public class LoginActivity extends Activity {
             SharedPreferenceHelper.putRemember(this, false);
         }
 
+        goToMainActivity();
     }
 
     private void checkSharedPreferences(){
         if (SharedPreferenceHelper.getRemember(this)){
-            Toast.makeText(this,"Esta guardado " + SharedPreferenceHelper.getFirstname(this)
-                    + " " + SharedPreferenceHelper.getLastname(this),Toast.LENGTH_SHORT).show();
+            goToMainActivity();
         }
+    }
+
+    private void goToMainActivity(){
+        Intent mainIntent = new Intent().setClass(LoginActivity.this, MainActivity.class);
+        startActivity(mainIntent);
+        finish();
     }
 }
