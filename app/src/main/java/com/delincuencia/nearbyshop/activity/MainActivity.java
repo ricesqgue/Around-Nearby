@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void mensajeBienvenida(){
-        Toast.makeText(this, R.string.msjBienvenida + " " +SharedPreferenceHelper.getFirstname(this) +
+        Toast.makeText(this, getResources().getString(R.string.msjBienvenida) + " " +SharedPreferenceHelper.getFirstname(this) +
                 " " + SharedPreferenceHelper.getLastname(this), Toast.LENGTH_LONG).show();
     }
 }
+
